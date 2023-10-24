@@ -18,8 +18,8 @@
     }
 
     #app-bar img {
-      max-width: 100px;
-      max-height: 100px;
+      max-width: 130px;
+      max-height: 130px;
       border-radius: 10%;
     }
 
@@ -46,11 +46,15 @@
     .parrafo {
       flex: 1; /* Hace que el texto ocupe el espacio disponible restante */
       text-align: left; /* Alinea el texto a la izquierda */
-      font-size: 18px; /* Aumenta el tamaño del texto del párrafo a 18px */
+      font-size: 25px; /* Aumenta el tamaño del texto del párrafo a 18px */
     }
 
     h1 {
-      font-size: 24px; /* Aumenta el tamaño del texto del título a 24px */
+      font-size: 50px; /* Aumenta el tamaño del texto del título a 24px */
+    }
+
+    h2 {
+      font-size: 35px; /* Aumenta el tamaño del texto del título a 24px */
     }
 
     img {
@@ -58,33 +62,45 @@
       height: auto;
     }
 
-    /* Estilos para los contenedores nuevos */
-    .contenedor-nuevo {
-      width: 40%; /* Aumenta el ancho de los nuevos contenedores en un 30% */
-      padding: 20px;
-      background-color: #6EADF7;
+    .contenedor-A {
+      width: 40%;
+      padding: 20px;background-color: #6EADF7;
       text-align: center;
       border-radius: 20px;
-      box-shadow: 8px 8px 20px rgba(0, 0, 0, 0);
-      margin: 20px; /* Agrega margen entre los contenedores nuevos */
+      margin: 20px 0; /* Agrega margen entre los contenedores nuevos, tanto arriba como abajo */
     }
-
-    .contenedor-nuevo img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Contenedor principal para los contenedores nuevos */
-    .contenedores-nuevos {
+    
+    .contenedores-B {
       display: flex;
-      justify-content: space-between; /* Coloca los contenedores nuevos uno al lado del otro con espacio entre ellos */
-      width: 90%; /* Ajusta el ancho del contenedor principal */
-      margin: 0 auto; /* Centra el contenedor principal horizontalmente */
+      justify-content: space-between; 
+      width: 90%; 
+      margin: 0 auto; 
     }
 
-    /* Estilo para el contenedor "Objetivo General" */
     .objetivo-general {
-      background-color: #fff; /* Fondo blanco */
+      background-color: #fff; 
+    }
+
+    .image-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px; /* Reduce el espaciado interno */
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px; /* Separación desde arriba */
+    }
+
+    .image-container-text {
+      margin-bottom: 10px; 
+      text-align: center;
+    }
+    
+    .image-container img {
+      max-width: 90%; 
+      border-radius: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -105,19 +121,42 @@
   </div>
 
   <!-- Contenedor principal para los contenedores nuevos -->
-  <div class="contenedores-nuevos">
-    <div class="contenedor-nuevo objetivo-general">
+  <div class="contenedores-B">
+    <div class="contenedor-A objetivo-general">
       <h2>Objetivo General</h2>
-      <p>Desarrollar un aplicativo web “POPE CLEANIG” para la cotización y asignación de citas en una empresa de cleaners.</p>
-      <h2>Objetivos Especificos</h2>`
-      <p>•	Producir un aplicativo web para cotizar por el servicio y que agende las citas.</p>
-      <p>•	Desarrollo de una base de datos en MySQL (firebase) que permita llevar registro de usuarios, clientes y el agendamiento de horarios del salón de belleza.</p>
-      <p>•	Implementar la conexión de la App web y la base de datos para posteriores pruebas</p>
-        </p>
+      <div class="parrafo">
+      <p style="text-align: left; flex: 0.4;">Desarrollar un aplicativo web “POPE CLEANIG” para la cotización y asignación de citas en una empresa de cleaners.</p>
+      <h2>Objetivos Específicos</h2>
+      <p style="text-align: left; flex: 0.6;">• Producir un aplicativo web para cotizar por el servicio y que agende las citas.</p>
+      <p style="text-align: left; flex: 0.6;">• Desarrollo de una base de datos en MySQL (firebase) que permita llevar registro de usuarios, clientes y el agendamiento de horarios del salón de belleza.</p>
+      <p style="text-align: left; flex: 0.6;">• Implementar la conexión de la App web y la base de datos para posteriores pruebas.</p>
     </div>
-    <div class="contenedor-nuevo">
+    </div>
+
+    <div class="contenedor-A">
       <h2>Título del Contenedor Nuevo 2</h2>
+      <div class="parrafo">
       <p>Texto del Contenedor Nuevo 2</p>
       <img src="ruta-de-la-imagen-2.jpg" alt="Imagen 2">
     </div>
+    </div>
+  </div>
+  <div class="image-container-text">
+    <h2>mockups</h2>
+    <div class="image-container">
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\1. sign up.png" alt="Imagen 1">
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\2. Sign in.png" alt="Imagen 2">
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\3. home page.png." alt="Imagen 3">
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\4. Drawel.png" alt="Imagen 4">
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\5. quote.png." alt="Imagen 5">
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\6. data.png." alt="Imagen 6">
+      
+    </div>
+  </div>
+
+  <div id="container">
+    <h2>concluciones</h2>
+    <div class="content">
+      <div class="parrafo">
+        <p>como resultado de lo indagado a lo largo de este semestre se llego a la conclucion de que el proyecto de desarrollo de una aplicación web y móvil para Pope Cleaning responde a la necesidad de simplificar y modernizar la solicitud de servicios de limpieza. Esta iniciativa busca ofrecer a los clientes una experiencia eficiente y cómoda, permitiendo cotizar y agendar servicios de limpieza de manera sencilla. El proyecto se basa en un planteamiento sólido del problema, estableciendo objetivos claros, límites y estrategias de contingencia, y se centra en la recopilación de información para garantizar un desarrollo acorde a las necesidades de la empresa y sus clientes.</p>
   </div>
