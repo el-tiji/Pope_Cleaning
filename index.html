@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <titel> proyecto Pope Cleaning</titel>
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pope Cleaning</title>
+  <style>
+    /* Estilos para el app bar */
+    #app-bar {
+      background-color: #6EADF7;
+      color: #fff;
+      padding: 10px;
+      text-align: left;
+      margin: 0 auto; /* Centra el app bar horizontalmente */
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+      width: 90%;
+    }
+
+    #app-bar img {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 10%;
+    }
+
+    #container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #6EADF7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+      display: flex;
+      align-items: center; /* Centra verticalmente el contenido */
+      width: 100%;
+      text-align: center;
+    }
+
+    .parrafo {
+      flex: 1; /* Hace que el texto ocupe el espacio disponible restante */
+      text-align: left; /* Alinea el texto a la izquierda */
+      font-size: 18px; /* Aumenta el tamaño del texto del párrafo a 18px */
+    }
+
+    h1 {
+      font-size: 24px; /* Aumenta el tamaño del texto del título a 24px */
+    }
+
+    img {
+      max-width: 30%;
+      height: auto;
+    }
+
+    /* Estilos para los contenedores nuevos */
+    .contenedor-nuevo {
+      width: 40%; /* Aumenta el ancho de los nuevos contenedores en un 30% */
+      padding: 20px;
+      background-color: #6EADF7;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 8px 8px 20px rgba(0, 0, 0, 0);
+      margin: 20px; /* Agrega margen entre los contenedores nuevos */
+    }
+
+    .contenedor-nuevo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Contenedor principal para los contenedores nuevos */
+    .contenedores-nuevos {
+      display: flex;
+      justify-content: space-between; /* Coloca los contenedores nuevos uno al lado del otro con espacio entre ellos */
+      width: 90%; /* Ajusta el ancho del contenedor principal */
+      margin: 0 auto; /* Centra el contenedor principal horizontalmente */
+    }
+
+    /* Estilo para el contenedor "Objetivo General" */
+    .objetivo-general {
+      background-color: #fff; /* Fondo blanco */
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-    
-</html>
+  <!-- App bar -->
+  <div id="app-bar">
+    <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\logo.png" alt="Logo">
+  </div>
+
+  <div id="container">
+    <h1>Introducción</h1>
+    <div class="content">
+      <div class="parrafo">
+        <p>Este proyecto nace de la necesidad de la empresa Pope Cleaning, una empresa empleada en los servicios de limpieza de oficinas comerciales y casas residenciales que busca ofrecer sus servicios en una plataforma digital, teniendo en cuenta el crecimiento gracias a la confianza y recomendaciones de sus clientes a su vez apoyándose de publicidad con el uso de las redes sociales generando así un crecimiento orgánico, sin embargo con la creciente demanda de sus servicios se ha tomado la iniciativa de modernizar y simplificar los procesos para la solicitud del servicio de limpieza mediante el uso de un aplicativo web y móvil. Buscando así brindar una experiencia eficiente y acogedora para el cliente.</p>
+      </div>
+      <img src="C:\Users\manue\OneDrive\Documents\GitHub\Pope_Cleaning\assets\empresa.png" alt="Imagen">
+    </div>
+  </div>
+
+  <!-- Contenedor principal para los contenedores nuevos -->
+  <div class="contenedores-nuevos">
+    <div class="contenedor-nuevo objetivo-general">
+      <h2>Objetivo General</h2>
+      <p>Desarrollar un aplicativo web “POPE CLEANIG” para la cotización y asignación de citas en una empresa de cleaners.</p>
+      <h2>Objetivos Especificos</h2>`
+      <p>•	Producir un aplicativo web para cotizar por el servicio y que agende las citas.</p>
+      <p>•	Desarrollo de una base de datos en MySQL (firebase) que permita llevar registro de usuarios, clientes y el agendamiento de horarios del salón de belleza.</p>
+      <p>•	Implementar la conexión de la App web y la base de datos para posteriores pruebas</p>
+        </p>
+    </div>
+    <div class="contenedor-nuevo">
+      <h2>Título del Contenedor Nuevo 2</h2>
+      <p>Texto del Contenedor Nuevo 2</p>
+      <img src="ruta-de-la-imagen-2.jpg" alt="Imagen 2">
+    </div>
+  </div>
